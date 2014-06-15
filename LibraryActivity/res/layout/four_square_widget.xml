@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ImageView
+		android:id="@+id/cover"
+		android:src="@drawable/fallback_cover"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:scaleType="fitCenter"
+		android:contentDescription="@string/cover_art" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_margin="5dip"
+		android:baselineAligned="false"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/title"
+			android:visibility="invisible"
+			android:layout_width="fill_parent"
+			android:layout_height="0px"
+			android:layout_weight="1"
+			android:gravity="center_horizontal|bottom"
+			android:textColor="#fff"
+			android:textSize="18dip"
+			android:shadowColor="#f000"
+			android:shadowDx="0"
+			android:shadowDy="0"
+			android:shadowRadius="5"
+			android:textStyle="bold"
+			android:ellipsize="marquee"
+			android:singleLine="true" />
+		<TextView
+			android:id="@+id/artist"
+			android:text="@string/app_name"
+			android:layout_width="fill_parent"
+			android:layout_height="0px"
+			android:layout_weight="1"
+			android:gravity="center_horizontal|top"
+			android:textColor="#fff"
+			android:shadowColor="#f000"
+			android:shadowDx="0"
+			android:shadowDy="0"
+			android:shadowRadius="5"
+			android:textSize="15dip"
+			android:ellipsize="marquee"
+			android:singleLine="true" />
+		<LinearLayout
+			android:id="@+id/buttons"
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="0px"
+			android:layout_weight="2">
+			<ImageButton
+				android:id="@+id/play_pause"
+				android:adjustViewBounds="true"
+				android:src="@drawable/play"
+				android:scaleType="centerInside"
+				android:background="@null"
+				android:layout_height="fill_parent"
+				android:layout_width="0px"
+				android:layout_weight="1"
+				android:contentDescription="@string/play_pause" />
+			<ImageButton
+				android:id="@+id/next"
+				android:adjustViewBounds="true"
+				android:src="@drawable/next"
+				android:scaleType="centerInside"
+				android:background="@null"
+				android:layout_height="fill_parent"
+				android:layout_width="0px"
+				android:layout_weight="1"
+				android:contentDescription="@string/next_song" />
+		</LinearLayout>
+	</LinearLayout>
+</FrameLayout>

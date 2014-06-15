@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RadioGroup
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/sort_direction"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal">
+	<RadioButton
+		style="@style/AlertDialogItem"
+		android:id="@+id/ascending"
+		android:text="@string/ascending"
+		android:layout_width="0px"
+		android:layout_height="fill_parent"
+		android:layout_weight="1" />
+	<RadioButton
+		style="@style/AlertDialogItem"
+		android:id="@+id/descending"
+		android:text="@string/descending"
+		android:layout_width="0px"
+		android:layout_height="fill_parent"
+		android:layout_weight="1" />
+</RadioGroup>

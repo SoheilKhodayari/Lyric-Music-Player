@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceScreen
+		android:title="@string/audio">
+		<intent
+			android:targetPackage="org.music.player"
+			android:targetClass="org.music.player.PreferencesActivity$AudioActivity" />
+	</PreferenceScreen>
+	<PreferenceScreen
+		android:title="@string/playback_screen">
+		<intent
+			android:targetPackage="org.music.player"
+			android:targetClass="org.music.player.PreferencesActivity$PlaybackActivity" />
+	</PreferenceScreen>
+	<PreferenceScreen
+		android:title="@string/library_screen">
+		<intent
+			android:targetPackage="org.music.player"
+			android:targetClass="org.music.player.PreferencesActivity$LibraryActivity" />
+	</PreferenceScreen>
+	<PreferenceScreen
+		android:title="@string/notifications">
+		<intent
+			android:targetPackage="org.music.player"
+			android:targetClass="org.music.player.PreferencesActivity$NotificationsActivity" />
+	</PreferenceScreen>
+	<PreferenceScreen
+		android:title="@string/accelerometer_shake">
+		<intent
+			android:targetPackage="org.music.player"
+			android:targetClass="org.music.player.PreferencesActivity$ShakeActivity" />
+	</PreferenceScreen>
+	<PreferenceScreen
+		android:title="@string/misc_features">
+		<intent
+			android:targetPackage="org.music.player"
+			android:targetClass="org.music.player.PreferencesActivity$MiscActivity" />
+	</PreferenceScreen>
+	<PreferenceScreen
+		android:title="@string/about">
+		<intent
+			android:targetPackage="org.music.player"
+			android:targetClass="org.music.player.PreferencesActivity$AboutActivity" />
+	</PreferenceScreen>
+</PreferenceScreen>

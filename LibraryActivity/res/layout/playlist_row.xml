@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<org.kreed.vanilla.DragTextView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:padding="3dip"
+	android:singleLine="true"
+	android:textColor="#ffff"
+	android:gravity="left|center_vertical" />

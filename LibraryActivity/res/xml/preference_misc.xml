@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:persistent="true">
+	<CheckBoxPreference
+		android:key="disable_lockscreen"
+		android:title="@string/disable_lockscreen_title"
+		android:summary="@string/disable_lockscreen_summary"
+		android:defaultValue="false" />
+	<CheckBoxPreference
+		android:key="use_idle_timeout"
+		android:title="@string/use_idle_timeout_title"
+		android:summary="@string/use_idle_timeout_summary"
+		android:defaultValue="false" />
+	<org.music.player.IdlePreference
+		android:key="idle_timeout"
+		android:title="@string/idle_timeout_title"
+		android:dependency="use_idle_timeout" />
+	<CheckBoxPreference
+		android:key="disable_cover_art"
+		android:title="@string/disable_cover_art_title"
+		android:summary="@string/disable_cover_art_summary"
+		android:defaultValue="false" />
+	<CheckBoxPreference
+		android:key="double_tap"
+		android:title="@string/double_tap_title"
+		android:summary="@string/double_tap_summary"
+		android:defaultValue="false" />
+	<CheckBoxPreference
+		android:key="scrobble"
+		android:title="@string/scrobble_title"
+		android:defaultValue="true"
+		android:summary="@string/scrobble_summary" />
+	<CheckBoxPreference
+		android:key="stock_broadcast"
+		android:title="@string/stock_broadcast_title"
+		android:summary="@string/stock_broadcast_summary"
+		android:defaultValue="false" />
+</PreferenceScreen>

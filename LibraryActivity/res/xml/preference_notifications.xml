@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:persistent="true">
+	<org.music.player.ListPreferenceSummary
+		android:key="notification_mode"
+		android:title="@string/notification_mode_title"
+		android:entries="@array/notification_mode_entries"
+		android:entryValues="@array/entry_values"
+		android:defaultValue="1" />
+	<org.music.player.ListPreferenceSummary
+		android:key="notification_action"
+		android:title="@string/notification_action_title"
+		android:entries="@array/notification_action_entries"
+		android:entryValues="@array/entry_values"
+		android:defaultValue="0" />
+	<CheckBoxPreference
+		android:key="notification_inverted_color"
+		android:title="@string/notification_invert_color_title"
+		android:summary="@string/notification_invert_color_summary"
+		android:defaultValue="false" />
+</PreferenceScreen>

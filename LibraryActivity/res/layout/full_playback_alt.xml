@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+	<org.kreed.vanilla.CoverView
+		android:id="@+id/cover_view"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent" />
+	<TableLayout
+		android:id="@+id/info_table"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top"
+		android:collapseColumns="0"
+		android:stretchColumns="1"
+		android:shrinkColumns="1"
+		android:background="#a000"
+		android:paddingLeft="5dip"
+		android:paddingRight="5dip">
+		<TableRow>
+			<TextView
+				android:text="@string/_title"
+				android:paddingRight="5dip"
+				android:gravity="right" />
+			<TextView
+				android:id="@+id/title"
+				android:textStyle="bold" />
+			<TextView
+				android:id="@+id/queue_pos"
+				android:singleLine="true"
+				android:layout_gravity="top" />
+		</TableRow>
+		<TableRow>
+			<TextView
+				android:text="@string/_artist"
+				android:paddingRight="5dip"
+				android:gravity="right" />
+			<TextView android:id="@+id/artist" />
+		</TableRow>
+		<TableRow>
+			<TextView
+				android:text="@string/_album"
+				android:paddingRight="5dip"
+				android:gravity="right" />
+			<TextView android:id="@+id/album" />
+		</TableRow>
+		<TableRow>
+			<TextView
+				android:text="@string/_genre"
+				android:paddingRight="5dip"
+				android:gravity="right" />
+			<TextView android:id="@+id/genre" />
+		</TableRow>
+		<TableRow>
+			<TextView
+				android:text="@string/_track"
+				android:paddingRight="5dip"
+				android:gravity="right" />
+			<TextView android:id="@+id/track" />
+		</TableRow>
+		<TableRow>
+			<TextView
+				android:text="@string/_year"
+				android:paddingRight="5dip"
+				android:gravity="right" />
+			<TextView android:id="@+id/year" />
+		</TableRow>
+		<TableRow>
+			<TextView
+				android:text="@string/_composer"
+				android:paddingRight="5dip"
+				android:gravity="right" />
+			<TextView android:id="@+id/composer" />
+		</TableRow>
+		<TableRow>
+			<TextView
+				android:text="@string/_format"
+				android:paddingRight="5dip"
+				android:gravity="right" />
+			<TextView android:id="@+id/format" />
+		</TableRow>
+		<LinearLayout android:id="@+id/controls_top">
+			<TextView
+				android:id="@+id/elapsed"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:textSize="10sp"
+				android:layout_gravity="center" />
+			<SeekBar
+				android:id="@+id/seek_bar"
+				android:layout_height="wrap_content"
+				android:layout_width="0px"
+				android:layout_gravity="center"
+				android:layout_weight="1"
+				android:paddingLeft="18dip"
+				android:paddingRight="18dip" />
+			<TextView
+				android:id="@+id/duration"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:textSize="10sp"
+				android:layout_gravity="center" />
+		</LinearLayout>
+	</TableLayout>
+	<LinearLayout
+		android:id="@+id/controls_bottom"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_gravity="bottom|left"
+		android:layout_margin="0dip"
+		android:background="#a000"
+		android:orientation="horizontal">
+		<include layout="@layout/controls" />
+	</LinearLayout>
+</merge>

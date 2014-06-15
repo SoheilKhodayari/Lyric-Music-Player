@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/selectable_item_bg"
+	android:maxLines="2"
+	android:textColor="#ffff"
+	android:gravity="left|center_vertical"
+	android:padding="3dip"
+	android:minHeight="44dip" />

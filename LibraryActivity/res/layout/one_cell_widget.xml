@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent">
+	<ImageView
+		android:id="@+id/cover"
+		android:src="@drawable/fallback_cover"
+		android:layout_centerInParent="true"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:contentDescription="@string/cover_art" />
+	<TextView
+		android:id="@+id/title"
+		android:text="@string/app_name"
+		android:layout_alignBottom="@id/cover"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textColor="#fff"
+		android:background="#a000"
+		android:textSize="12dip"
+		android:textStyle="bold"
+		android:ellipsize="marquee"
+		android:singleLine="true" />
+	<LinearLayout
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:orientation="vertical" >
+		<ImageButton
+			android:id="@+id/play_pause"
+			android:adjustViewBounds="true"
+			android:src="@drawable/hidden_play"
+			android:background="@null"
+			android:layout_height="0px"
+			android:layout_width="fill_parent"
+			android:layout_weight="1"
+			android:contentDescription="@string/play_pause" />
+		<ImageButton
+			android:id="@+id/next"
+			android:adjustViewBounds="true"
+			android:src="@drawable/hidden_next"
+			android:background="@null"
+			android:layout_height="0px"
+			android:layout_width="fill_parent"
+			android:layout_weight="1"
+			android:contentDescription="@string/next_song" />
+	</LinearLayout>
+</RelativeLayout>

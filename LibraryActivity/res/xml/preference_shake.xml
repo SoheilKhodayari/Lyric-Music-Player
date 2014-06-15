@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:persistent="true">
+	<CheckBoxPreference
+		android:key="enable_shake"
+		android:title="@string/enable_shake_title"
+		android:summary="@string/enable_shake_summary"
+		android:defaultValue="false" />
+	<org.music.player.ListPreferenceSummary
+		android:key="shake_action"
+		android:title="@string/shake_action_title"
+		android:entries="@array/swipe_action_entries"
+		android:entryValues="@array/swipe_action_values"
+		android:defaultValue="NextSong"
+		android:dependency="enable_shake" />
+	<!-- Might be nice to show something indicating the current shake force for this preference. -->
+	<org.music.player.SeekBarPreference
+		android:key="shake_threshold"
+		android:negativeButtonText="@null"
+		android:dialogLayout="@layout/shake_pref"
+		android:title="@string/shake_threshold_title"
+		android:defaultValue="80"
+		android:dependency="enable_shake" />
+</PreferenceScreen>

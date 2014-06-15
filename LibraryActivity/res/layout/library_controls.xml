@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/controls"
+	android:background="@drawable/music_bottom_playback_bg"
+	android:layout_width="fill_parent"
+	android:layout_height="80dip">
+	<TextView
+		android:id="@+id/empty_queue"
+		android:gravity="center"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:text="@string/empty_queue"
+		android:visibility="gone" />
+	<ImageView
+		android:id="@+id/cover"
+		android:scaleType="fitCenter"
+		android:layout_width="80dip"
+		android:layout_height="fill_parent"
+		android:layout_gravity="center"
+		android:contentDescription="@string/cover_art" />
+	<LinearLayout
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/title"
+			android:textSize="14sp"
+			android:singleLine="true"
+			android:ellipsize="marquee"
+			android:gravity="center"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+		<TextView
+			android:id="@+id/artist"
+			android:textSize="12sp"
+			android:singleLine="true"
+			android:ellipsize="marquee"
+			android:gravity="center"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<include layout="@layout/controls" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

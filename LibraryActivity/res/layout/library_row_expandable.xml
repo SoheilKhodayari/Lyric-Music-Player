@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal">
+	<TextView
+		android:id="@+id/text"
+		android:longClickable="true"
+		android:background="@drawable/selectable_item_bg"
+		android:maxLines="2"
+		android:padding="3dip"
+		android:textColor="#ffff"
+		android:gravity="left|center_vertical"
+		android:layout_width="0px"
+		android:layout_height="44dip"
+		android:layout_weight="1" />
+	<View
+		android:id="@+id/divider"
+		android:layout_width="1dip"
+		android:layout_height="fill_parent"
+		android:background="@color/divider_color" />
+	<ImageView
+		android:id="@+id/arrow"
+		android:background="@drawable/selectable_item_bg"
+		android:longClickable="true"
+		android:scaleType="center"
+		android:src="@drawable/arrow"
+		android:layout_width="44dip"
+		android:layout_height="44dip"
+		android:contentDescription="@string/expand" />
+</LinearLayout>

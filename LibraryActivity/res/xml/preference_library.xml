@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:persistent="true">
+	<CheckBoxPreference
+		android:key="controls_in_selector"
+		android:title="@string/controls_in_selector_title"
+		android:summary="@string/controls_in_selector_summary"
+		android:defaultValue="false" />
+	<PreferenceScreen
+		android:title="@string/tabs"
+		android:summary="@string/customize_tab_order">
+		<intent
+			android:targetPackage="org.music.player"
+			android:targetClass="org.music.player.TabOrderActivity" />
+	</PreferenceScreen>
+	<org.music.player.ListPreferenceSummary
+		android:key="default_action_int"
+		android:title="@string/default_action_title"
+		android:entries="@array/default_action_entries"
+		android:entryValues="@array/entry_values"
+		android:defaultValue="7" />
+	<org.music.player.ListPreferenceSummary
+		android:key="default_playlist_action"
+		android:title="@string/default_playlist_action_title"
+		android:entries="@array/default_playlist_action_entries"
+		android:entryValues="@array/entry_values"
+		android:defaultValue="3" />
+	<org.music.player.ScanPreference />
+</PreferenceScreen>
