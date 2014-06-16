@@ -203,4 +203,30 @@ public class PreferencesActivity extends PreferenceActivity {
 			return view;
 		}
 	}
+	public static class LyricActivity extends Activity {
+		@Override
+		public void onCreate(Bundle state)
+		{
+			super.onCreate(state);
+
+			WebView view = new WebView(this);
+			view.getSettings().setJavaScriptEnabled(true);
+			view.loadUrl("file:///android_asset/lyrics.html");
+			view.setBackgroundColor(Color.TRANSPARENT);
+			setContentView(view);
+		}
+	}
+	@TargetApi(11)
+	public static class LyricFragment extends WebViewFragment {
+		@Override
+		public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+		{
+			WebView view = (WebView)super.onCreateView(inflater, container, savedInstanceState);
+			view.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+			view.getSettings().setJavaScriptEnabled(true);
+			view.loadUrl("file:///android_asset/lyrics.html");
+			view.setBackgroundColor(Color.TRANSPARENT);
+			return view;
+		}
+	}
 }
