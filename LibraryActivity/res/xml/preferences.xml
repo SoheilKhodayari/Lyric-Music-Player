@@ -43,4 +43,10 @@
 			android:targetPackage="org.music.player"
 			android:targetClass="org.music.player.PreferencesActivity$AboutActivity" />
 	</PreferenceScreen>
+	<PreferenceScreen
+		android:title="@string/lyric">
+		<intent
+			android:targetPackage="org.music.player"
+			android:targetClass="org.music.player.PreferencesActivity$LyricActivity" />
+	</PreferenceScreen>
 </PreferenceScreen>
