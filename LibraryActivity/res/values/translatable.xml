@@ -179,6 +179,7 @@
 	<string name="finished_scanning">Finished scanning. Tap to scan again.</string>
 
 	<string name="about">About</string>
+	<string name="lyric">Lyric</string>
 
 	<string name="tabs">Tab Order</string>
 	<string name="customize_tab_order">Adjust the order and visibility of library tabs</string>
