@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+body { font-family: sans-serif; color: #f3f3f3; background: transparent;}
+pre { background-color: #ccc; color: #000; padding: 1em; white-space: pre-wrap; display: none; }
+h2 { border-bottom: 1px solid #444; }
+a { color: #5c5cff; }
+</style>
+<script>
+function show(n) {
+	var e = document.getElementById(n);
+	if (e.style.display == "block") {
+		e.style.display="none";
+	} else {
+		e.style.display="block";
+	}
+}
+</script>
+</head>
+<body>
+
+<h3>Lyrics[<a href='javascript:show("l1")'>show</a>]</h3>
+<pre id='l1'>
+this is a sample lyric 
+
+</body>
+</html>
