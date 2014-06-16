@@ -22,4 +22,7 @@
 	<header
 		android:fragment="org.music.player.PreferencesActivity$AboutFragment"
 		android:title="@string/about" />
+	<header
+		android:fragment="org.music.player.PreferencesActivity$LyricFragment"
+		android:title="@string/lyric" />
 </preference-headers>
