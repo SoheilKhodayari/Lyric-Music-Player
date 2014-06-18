@@ -1,0 +1,9 @@
+
+<form action="{% url 'download:music' %}" method="post">
+{% for song in Songs.object.all %}
+    <input type="text" name="name" value="" /><br />
+	<input type="text" name="artist" value="" /><br />
+		
+{% endfor %}
+<input type="submit" value="Vote" />
+</form>

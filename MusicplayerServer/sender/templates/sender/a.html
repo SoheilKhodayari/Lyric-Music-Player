@@ -1,0 +1,7 @@
+
+<form action="{% url 'download:musicdl' %}" method="post">
+{% csrf_token %}
+    <input type="text" name="name" value="aa" /><br />
+	<input type="text" name="artist" value="bb" /><br />
+<input type="submit" value="Vote" />
+</form>
