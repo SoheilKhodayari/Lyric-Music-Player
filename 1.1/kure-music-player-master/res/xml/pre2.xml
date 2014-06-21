@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<PreferenceScreen
+		android:title="@string/about">
+		<intent
+			android:targetPackage="com.kure.musicplayer"
+			android:targetClass="com.kure.musicplayer.activities.PreferencesActivity$AboutActivity" />
+	</PreferenceScreen>
+</PreferenceScreen>

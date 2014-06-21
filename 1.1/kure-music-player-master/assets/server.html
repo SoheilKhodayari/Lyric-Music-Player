@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Testing</title>
+        <script type="text/javascript">
+
+            function clickUpload() {
+                document.getElementById("UploadFile").click();
+            }
+
+            function clickDownload() {
+                document.getElementById("DownloadForm").submit();
+            }
+
+            function MakeUpload() {
+                document.getElementById("UploadForm").submit();
+            }
+
+        </script>
+    </head>
+    <body>
+            <input type="button" value="Upload" onclick="clickUpload();" />
+            <input type="button" value="Download" onclick="clickDownload();" />
+            <form id="UploadForm" action="test3.asp" enctype="multipart/form-data">
+                <input type="file" id="UploadFile" onchange="MakeUpload();" style="display:none" />
+            </form>
+            <form id="DownloadForm" action="Test4.asp">
+            </form>
+    </body>
+</html>
